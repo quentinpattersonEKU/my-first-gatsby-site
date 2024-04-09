@@ -8,7 +8,7 @@ jobs:
   build-and-deploy:
     name: Build and deploy Gatsby site
     runs-on: ubuntu-latest
-    environment: test
+    environment: wendell
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2.3.1
