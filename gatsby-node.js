@@ -15,6 +15,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     // console.log(node);
     const { createNodeField } = actions 
     const slug = (node.path && node.path.alias) ? node.path.alias : '/node/' + node.drupal_id;
+    
+    if(node.inte)
     createNodeField({
         node,
         name: `slug`,
@@ -30,49 +32,97 @@ exports.createPages = ({ actions, graphql }) => {
         // const articleTemplate = path.resolve('src/templates/node/article/index.js')
         const pageTemplate = path.resolve(`src/pages/recipe.js`)
 
+        const pageTemplate2 = path.resolve(`src/pages/articles.js`)
         // page building queries
         // field_ragozin_sheet throws graphql errors
         resolve(
             graphql(
                 `
-query MyQuery {
-    Drupal {
-                nodeRecipes(first: 10) {
-                    edges {
-                        node {
-                            changed
-                            cookingTime
-                            difficulty
-                            created
-                            id
-                            ingredients
-                            numberOfServings
-                            path
-                            preparationTime
-                            promote
-                            status
-                            sticky
-                            title
-                            recipeInstruction {
-                                processed
-                                value
-                            }
-                            summary {
-                                value
-                            }
-                            mediaImage {
-                                mediaImage {
-                                    height
-                                    url
-                                    width
-                                }
-                                id
-                            }
+query MyQuery 
+{
+    Drupal 
+    {
+        nodeRecipes(first: 10) 
+        {
+            edges 
+            {
+                node 
+                {
+                    changed
+                    cookingTime
+                    difficulty
+                    created
+                    id
+                    ingredients
+                    numberOfServings
+                    path
+                    preparationTime
+                    promote
+                    status
+                    sticky
+                    title
+                    recipeInstruction 
+                    {
+                        processed
+                        value
+                    }
+                    summary 
+                    {
+                        value
+                    }
+                    mediaImage 
+                    {
+                        mediaImage 
+                        {
+                            height
+                            url
+                            width
                         }
+                        id
+                    
                     }
                 }
+            
             }
+                
+        }
+        nodeArticles(first: 10) 
+        {
+            nodes 
+            {
+                title
+                sticky
+                status
+                promote
+                path
+                id
+                created
+                changed
+                mediaImage {
+                  mediaImage {
+                    url
+                  }
+                  id
+                }
+                author {
+                  displayName
+                  status
+                  changed
+                  created
+                  id
+                  mail
+                  roles
+                }
+                body {
+                  value
+                  format
+                  processed
+                  summary
+                }
+            }
+        }
     }
+}
 `
             ).then(result => {
                 // shows during build/dev
@@ -84,6 +134,7 @@ query MyQuery {
                 console.log("PAGES");
                 console.log(result.data.Drupal.nodeRecipes);
                 const pages = result.data.Drupal.nodeRecipes.edges;
+                const pages2 = result.data.Drupal.nodeArticles.nodes;
 
                 //result.data.allNodeHorse.edges.forEach(({ node }, index) => {
                 pages.forEach(({ node }, index) => {
@@ -103,6 +154,21 @@ query MyQuery {
                         },
                     })
                 })
+                //result.data.allNodeHorse.edges.forEach(({ node }, index) => {
+                pages2.forEach((articleNode) => {
+                    // const page_path = (node.path && node.path.alias) ? node.path.alias : '/node/' + node.drupal_id;
+                    const page_path2 = `${articleNode.path}`
+                    console.log(page_path2);
+                    console.log(articleNode);
+                        actions.createPage({
+                        path: page_path2,
+                        component: pageTemplate2,
+                        context: {
+                            nid: articleNode.id,
+                            data: articleNode,
+                        },
+                    });
+                });
             })
         )
     });
