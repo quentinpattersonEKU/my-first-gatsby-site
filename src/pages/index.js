@@ -21,6 +21,16 @@ const IndexPage = () => {
       <Link to="/en/recipes/fiery-chili-sauce">Chili</Link><p></p>
       <Link to="/en/recipes/borscht-with-pork-ribs">Pork ribs</Link><p></p>
 
+      <h2>ARTICLES</h2>
+      <p></p>
+      <Link to="/en/articles/give-it-a-go-and-grow-your-own-herbs/">Grow herbs</Link><p></p>
+      <Link to="/en/articles/dairy-free-and-delicious-milk-chocolate/">Dairy free chocolate</Link><p></p>
+      <Link to="/en/articles/the-real-deal-for-supermarket-savvy-shopping/">savvy shopping</Link><p></p>
+      <Link to="/en/articles/the-umami-guide-to-our-favourite-mushrooms/">mushrooms</Link><p></p>
+      <Link to="//en/articles/lets-hear-it-for-carrots/">carrots</Link><p></p>
+      <Link to="/en/articles/baking-mishaps-our-troubleshooting-tips/">baking mishaps</Link><p></p>
+      <Link to="/en/articles/skip-the-spirits-with-delicious-mocktails/">mocktails</Link><p></p>
+      <Link to="/en/articles/give-your-oatmeal-the-ultimate-makeover/">oatmeal makeover</Link><p></p>
 
       <p>This isn't my english bulldog, but I do like English bulldogs</p>
     </Layout>
