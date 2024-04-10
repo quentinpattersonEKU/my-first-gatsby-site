@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Link to="/en/recipes/fiery-chili-sauce">Chili</Link><p></p>
       <Link to="/en/recipes/borscht-with-pork-ribs">Pork ribs</Link><p></p>
 
-      <h2>Articles</h2>
+      <h2>Articles!</h2>
       <p></p>
       <Link to="/en/articles/give-it-a-go-and-grow-your-own-herbs/">Grow herbs</Link><p></p>
       <Link to="/en/articles/dairy-free-and-delicious-milk-chocolate/">Dairy free chocolate</Link><p></p>
