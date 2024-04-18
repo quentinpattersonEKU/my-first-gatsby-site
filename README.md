@@ -1,3 +1,19 @@
+## GITHUB ACTIONS
+Here are the steps that the project takes in github actions every time that there is a push to the main branch:
+1) First, it sets up the job and looks for a runner
+2) Next, there is a git checkout of the code
+3) Node.js is install
+4) Project dependencies are installed
+5) We install the gatsby command line interface
+6) We install the markdown file plugin
+7) We build the gatsby project
+8) We verify the build
+9) We open a secure shell in the webserver
+10) From there, we upload the files to the webserver.
+11) We do a post-job cleanup
+12) Finally, our code is ready.
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -47,11 +63,4 @@
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
+
