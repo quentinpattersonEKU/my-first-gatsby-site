@@ -18,3 +18,18 @@ Here are the steps that the project takes in github actions every time that ther
 10) From there, we upload the files to the webserver.
 11) We do a post-job cleanup
 12) Finally, our code is ready.
+
+
+## The website
+
+<p>index</p>
+<img width="1512" alt="index" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/1c8ebf77-bd34-450c-abb6-d8a79555e7a9">
+
+<p>Recipe example</p>
+
+<img width="1510" alt="Quiche" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/c3419c2a-a8af-4513-ab05-13e5476d687e">
+
+<p>Article example</p>
+
+
+<img width="1512" alt="DairyFreeChocolate" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/076a98e5-3897-46ce-a016-31f64c371363">
