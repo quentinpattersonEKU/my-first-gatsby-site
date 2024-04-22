@@ -14,10 +14,11 @@ Here are the steps that the project takes in github actions every time that ther
 6) We install the markdown file plugin
 7) We build the gatsby project
 8) We verify the build
-9) We open a secure shell in the webserver
-10) From there, we upload the files to the webserver.
-11) We do a post-job cleanup
-12) Finally, our code is ready.
+9) Run tests with jest
+10) We open a secure shell in the webserver
+11) From there, we upload the files to the webserver.
+12) We do a post-job cleanup
+13) Finally, our code is ready.
 
 
 ## The website
