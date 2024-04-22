@@ -31,5 +31,11 @@ const pageTemplate2 = props => {
     )
 }
 
+function printLocation(){
+    console.log("articles.js");
+    return "articles.js";
+  }
+  
+  module.exports = printLocation
 
 export default pageTemplate2
