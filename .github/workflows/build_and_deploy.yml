@@ -32,6 +32,9 @@ jobs:
       
       - name: Verify build
         run: ls -la public
+
+      - name: run tests
+        run: npm test
       
       - name: Setup SSH For CSC496
         run: |
