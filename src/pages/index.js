@@ -37,12 +37,11 @@ const IndexPage = () => {
   )
 }
 
-function printLocation(){
+export function printLocation(){
   console.log("Index.js");
   return "Index.js";
 }
 
-module.exports = printLocation
 
 //<StaticImage
 //alt="English Bulldog"

@@ -17,13 +17,10 @@ const AboutPage = () => {
 }
 
 
-function printLocation(){
+export function printLocation(){
   console.log("about.js");
   return "about.js";
 }
-
-module.exports = printLocation
-
 
 export const Head = () => <Seo title About Me />
 
