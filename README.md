@@ -1,57 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+<h1>WELCOME TO MY PROJECT FOR SENIOR SEMINAR!</h1>
 
-## 🚀 Quick start
+## GATSBY
+This project was made with gatsby.
 
-1.  **Create a Gatsby site.**
+## GITHUB ACTIONS
+BUILD AND DEPLOY
+Here are the steps that the project takes in github actions every time that there is a push to the main branch:
+1) First, it sets up the job and looks for a runner
+2) Next, there is a git checkout of the code
+3) Node.js is install
+4) Project dependencies are installed
+5) We install the gatsby command line interface
+6) We install the markdown file plugin
+7) We build the gatsby project
+8) We verify the build
+9) We open a secure shell in the webserver
+10) From there, we upload the files to the webserver.
+11) We do a post-job cleanup
+12) Finally, our code is ready.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## The website
 
-2.  **Start developing.**
+<p>index</p>
+<img width="1512" alt="index" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/1c8ebf77-bd34-450c-abb6-d8a79555e7a9">
 
-    Navigate into your new site’s directory and start it up.
+<p>Recipe example</p>
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+<img width="1510" alt="Quiche" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/c3419c2a-a8af-4513-ab05-13e5476d687e">
 
-3.  **Open the code and start customizing!**
+<p>Article example</p>
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
-# my-first-gatsby-site
+<img width="1512" alt="DairyFreeChocolate" src="https://github.com/quentinpattersonEKU/my-first-gatsby-site/assets/166537314/076a98e5-3897-46ce-a016-31f64c371363">
